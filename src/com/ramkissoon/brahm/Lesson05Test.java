@@ -1,7 +1,7 @@
 package com.ramkissoon.brahm;
 
 // 	DRIVER CLASS +++++++++++++++++++++++++++++++
-public class Program {
+public class Lesson05Test {
 	
 	// MAIN STATIC METHOD ++++++++++++++++++++++
 	public static void main(String[] args) {
@@ -9,7 +9,11 @@ public class Program {
 		
 		resident.eats();	// inheriting from person class'
 		resident.setAddress("55"," Fifty-Fifth Street", "Toronto", "Ontario");
+		System.out.println("\n");
+		System.out.println(resident.getAddress());
 		
+		resident.changeAddress("44"," Forty-Fourth Street", "Toronto", "Ontario");
+		System.out.println("\n");
 		System.out.println(resident.getAddress());
 
 	}

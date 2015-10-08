@@ -3,8 +3,8 @@ package com.ramkissoon.brahm;
 // RESIDENT SUB CLASS OFF THE PERSON SUPERCLASS
 public class Resident extends Person {
 	// PRIVATE INSTANCE VARIABLES
-	private String _SIN; 	// make sure to add into constructor
-	private Address _address;
+	protected String _SIN; 	// make sure to add into constructor
+	protected Address _address;
 	
 	// GETTER AND SETTERS
 	public String getSIN(){
@@ -15,7 +15,12 @@ public class Resident extends Person {
 		this._address = new Address(streetNumber, streetName, cityName, provinceName);		
 	}
 	
-	// OUTPUT ADDRESS TOSTRING
+	// CHANGE ADDRESS
+	public void changeAddress(String streetNumber, String streetName, String cityName, String provinceName){
+		this._address.change(streetNumber, streetName, cityName, provinceName);
+	}
+	
+	// OUTPUT ADDRESS TOSTRING with TRY CATCH BLOCK WHEN ADDRESS IS NOT SET
 	public String getAddress(){
 		try {
 			return this._address.toString();
