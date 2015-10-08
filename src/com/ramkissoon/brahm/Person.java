@@ -1,13 +1,14 @@
 package com.ramkissoon.brahm;
-// super that we'll use for this example
+// super class that we'll use for this example
 public class Person {
 	// PRIVATE INSTANCE VARIABLES
-	private int _age;
-	private String _name;
-	private float _heightInInches;
-	private float _massInPounds;
+	// use protected so that sub-classes can access
+	protected int _age;			
+	protected String _name;
+	protected float _heightInInches;
+	protected float _massInPounds;
 	
-	// 	GETTERS/SETTERS, ACCESSORS/MUTATORS
+	// 	GETTERS/SETTERS (PROPERTIES)
 	
 	public int getAge() {
 		return this._age;
