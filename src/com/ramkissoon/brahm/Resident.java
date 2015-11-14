@@ -1,7 +1,7 @@
 package com.ramkissoon.brahm;
 
 // RESIDENT SUB CLASS OFF THE PERSON SUPERCLASS
-public class Resident extends Person {
+public abstract class Resident extends Person {
 	// PRIVATE INSTANCE VARIABLES
 	protected String _SIN; 	// make sure to add into constructor
 	protected Address _address;

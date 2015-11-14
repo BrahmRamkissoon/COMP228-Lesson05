@@ -1,6 +1,6 @@
 package com.ramkissoon.brahm;
 // super class that we'll use for this example
-public class Person {
+public abstract class Person {
 	// PRIVATE INSTANCE VARIABLES
 	// use protected so that sub-classes can access
 	protected int _age;			
